@@ -1,0 +1,191 @@
+<html>
+<head>
+
+<style>
+<meta charset="UTF-8">
+<meta name="viewport" content="widt=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>TODO LIST</title>
+<link rel="stylesheet" href="style.css">
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1506968430777-bf7784a87f23?q=80&w=2071&auto=format&fit=crop&ixlib-rb-4.0.3&ix );
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+}
+header .container{
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+}
+.logo img{
+    height: 35px;
+    width: 30px;
+
+}
+.logo p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+ul{
+    list-style: none;
+    gap: 14px;
+    display: flex;
+}
+li{
+    font-size: 20px;
+}
+.main img{
+    
+  
+  margin-left: 600px;
+}
+.main{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+.content{
+width: 100%;
+height: 100%;
+display: block;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+}
+.content .container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: auto;
+    
+    height: 100%;
+}
+.todo{
+    cursor: url(""),auto;
+    display: flex;
+    padding: 12px;
+    margin-top: 0;
+}
+.todo_value{
+    cursor: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    border-bottom: 2px solid brown;
+}
+.todo checkbox{
+cursor: inherit;
+}
+.todo:has(.todo_checkbox:checked){
+    color: brown;
+    background: black;
+    text-decoration: line-through 1.5px;
+order: 1;
+}</style>
+</head>
+    
+
+    <body>
+<header>
+    <nav class="container">
+        <div class="logo">
+            <img  src="https://img.freepik.com/premium-photo/old-love-letter-paper-backgrounds-page-distressed_53876-334940.jpg" alt="ToDo List">
+            <p>ToDo List</p>
+        </div>
+        <ul>
+            <a href="ToDo.html">
+                <li>Home</li>
+            </a>
+            <a href="main">
+                <li>Contacts</li>
+            </a>
+            <a href="main">
+                <li>Sign in</li>
+            </a>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <img src="https://i.pinimg.com/564x/1b/5d/63/1b5d63ac52316486cdbc09519f6d3438.jpg"  alt="scroll image" height="600px" weight="500px">
+    <div class="content">
+        <div class="container">
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            <div class="todo">
+                <input class="todo_value" type="text" placeholder="(empty)">
+                <input class="todo_checkbox" type="checkbox">
+            </div>
+            
+        </div>
+    </div>
+</div>
+    </body>
+    </html>
